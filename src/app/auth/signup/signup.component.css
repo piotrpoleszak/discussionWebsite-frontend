@@ -3,15 +3,25 @@
     margin: 100px;
 }
 
+.card-header
+{
+    background-color: #202020;
+    color: #FFF;
+}
+
+.card-body
+{
+    background-color: #404040;
+    color: #FFF;
+}
+
 .sign-up 
 {
     background-color: #0079D3;
-    border-color: #0079D3;
+    border: none;
     color: aliceblue;
     fill: #0079D3;
-    border: 1px solid;
     border-radius: 4px;
-    text-align: center;
     letter-spacing: 1px;
     text-decoration: none;
     font-size: 12px;
@@ -19,6 +29,11 @@
     letter-spacing: .5px;
     line-height: 24px;
     text-transform: uppercase;
-    padding: 3px 16px;
+    padding: 5px 20px;
     opacity: 1;
+}
+
+.sign-up:hover
+{
+    opacity: 0.6;
 }
