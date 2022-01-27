@@ -1,6 +1,12 @@
 .login-section
 {
     margin: 100px;
+    border: none;
+}
+
+.card
+{
+    border: none;
 }
 
 .card-header
@@ -50,4 +56,4 @@
     text-transform: uppercase;
     padding: 5px 20px;
     opacity: 1;
-  }
+}
