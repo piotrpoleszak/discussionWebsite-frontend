@@ -4,7 +4,7 @@ header
 }
 .logo-icon
 {
-    height: 70px;
+    height: 55px;
     padding: 8px 8px 8px 0;
     width: 50px;
 }
@@ -19,6 +19,7 @@ header
 
 .logo
 {
+    margin-left: 10px;
     text-decoration: none;
 }
 
@@ -43,14 +44,16 @@ header
     opacity: 1;  
 }
 
-.signup
+.signup, 
+.login
 {
     background-color: #0079D3;
     border-color: #0079D3;
     color: aliceblue;
 }
 
-.signup:hover
+.signup:hover,
+.login:hover
 {
     opacity: 0.6;
 }
