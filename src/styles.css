@@ -3,3 +3,8 @@ body
     display: block;
     background-color:  #303030;
 }
+
+input.ng-invalid.ng-touched
+{
+    border: 2px solid red;
+}
