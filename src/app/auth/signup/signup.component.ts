@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { AuthService } from '../shared/auth.service';
 import { SignupRequestPayload } from './signup-request.payload';
 
 @Component({
@@ -13,7 +15,7 @@ export class SignUpComponent implements OnInit {
   signupRequestPayload: SignupRequestPayload;
 
 
-  constructor() { 
+  constructor(private authService: AuthService, private router: Router) {
     this.signupRequestPayload = {
       username: '',
       email: '',
@@ -33,5 +35,10 @@ export class SignUpComponent implements OnInit {
     this.signupRequestPayload.email = this.signupForm.get('email')?.value;
     this.signupRequestPayload.username = this.signupForm.get('username')?.value;
     this.signupRequestPayload.password = this.signupForm.get('password')?.value;
+
+    this.authService.signup(this.signupRequestPayload)
+    .subscribe(data => {
+      console.log(data);
+    })
   }
 }
