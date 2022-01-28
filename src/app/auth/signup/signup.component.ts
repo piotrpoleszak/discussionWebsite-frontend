@@ -13,7 +13,13 @@ export class SignUpComponent implements OnInit {
   signupRequestPayload: SignupRequestPayload;
 
 
-  constructor() { }
+  constructor() { 
+    this.signupRequestPayload = {
+      username: '',
+      email: '',
+      password: ''
+    };
+  }
 
   ngOnInit() {
     this.signupForm = new FormGroup({
@@ -24,5 +30,8 @@ export class SignUpComponent implements OnInit {
   }
 
   signup() {
+    this.signupRequestPayload.email = this.signupForm.get('email')?.value;
+    this.signupRequestPayload.username = this.signupForm.get('username')?.value;
+    this.signupRequestPayload.password = this.signupForm.get('password')?.value;
   }
 }
