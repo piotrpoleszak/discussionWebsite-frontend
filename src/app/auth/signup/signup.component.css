@@ -20,24 +20,6 @@
     color: #FFF;
 }
 
-.sign-up 
-{
-    background-color: #0079D3;
-    border: none;
-    color: aliceblue;
-    fill: #0079D3;
-    border-radius: 4px;
-    letter-spacing: 1px;
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: .5px;
-    line-height: 24px;
-    text-transform: uppercase;
-    padding: 5px 20px;
-    opacity: 1;
-}
-
 .sign-up:hover
 {
     opacity: 0.6;
