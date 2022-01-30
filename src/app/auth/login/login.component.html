@@ -6,7 +6,7 @@
                 <div class="card-header" style="text-align: center"><h4>Login</h4></div>
                 <div class="card-body">
                     <form [formGroup]="loginForm" (ngSubmit)="login()">
-                        
+
                         <div class="form-group row mt-3">
                             <label for="user_name" class="col-md-4 col-form-label text-md-right">Username</label>
                             <div class="col-md-6">
@@ -32,9 +32,12 @@
                                 Login
                             </button>
                         </span>   
-                        <div class="login-failed">
+                        <div class="login-failed" *ngIf='this.isError'>
                              <p class="login-failed-text">Login Failed. Please check your credentials and try again.</p>   
-                        </div>                     
+                        </div>
+                        <div class="login-failed" [ngStyle]="{'background-color': 'green'}" *ngIf="this.registerSuccessMessage.length > 0">
+                            <p class="register-success-text">{{registerSuccessMessage}}</p>   
+                       </div>                      
                     </form>
                 </div>
             </div>
