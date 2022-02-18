@@ -57,4 +57,15 @@ export class AuthService
         this.localStorage.store('expiresAt', response.expiresAt);
       }));
   }
+
+  getUserName() {
+    return this.localStorage.retrieve('username');
+  }
+  getRefreshToken() {
+    return this.localStorage.retrieve('refreshToken');
+  }
+
+  isLoggedIn(): boolean {
+    return this.getJwtToken() != null;
+  }
 }
