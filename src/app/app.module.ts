@@ -13,6 +13,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { HomeComponent } from './home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { PostTitleComponent } from './shared/post-title/post-title.component';
+import { VoteButtonComponent } from './shared/vote-button/vote-button.component';
+import { SideBarComponent } from './shared/side-bar/side-bar.component';
+import { SubpostSideBarComponent } from './shared/subpost-side-bar/subpost-side-bar.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HeaderComponent,
     SignUpComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    PostTitleComponent,
+    VoteButtonComponent,
+    SideBarComponent,
+    SubpostSideBarComponent
   ],
   imports: [
     BrowserModule,
