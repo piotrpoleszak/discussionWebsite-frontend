@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
 import { PostService } from '../post.service';
 import { PostModel } from '../post-model';
-import { faComments } from '@fortawesome/free-solid-svg-icons';
+import { faComments } from '@fortawesome/pro-solid-svg-icons@5.15.4';
 import { Router } from '@angular/router';
 
 @Component({
