@@ -1,0 +1,26 @@
+.register-section
+{
+    margin: 100px;
+}
+
+.card
+{
+    border: none;
+}
+
+.card-header
+{
+    background-color: #202020;
+    color: #FFF;
+}
+
+.card-body
+{
+    background-color: #404040;
+    color: #FFF;
+}
+
+.sign-up:hover
+{
+    opacity: 0.6;
+}
