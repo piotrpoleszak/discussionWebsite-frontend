@@ -9,6 +9,7 @@ body
     height: 100%;
     display: block;
     background-color:  #303030;
+    margin-top: 63px;
 }
 
 input.ng-invalid.ng-touched
