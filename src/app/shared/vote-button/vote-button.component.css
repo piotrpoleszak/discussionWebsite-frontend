@@ -1,4 +1,4 @@
-.votebox
+.votebox 
 {    
     display: flex;
     text-align: center;
@@ -16,7 +16,7 @@
     cursor: pointer;
     border-radius: 2px solid;        
 }
-.upvote:hover
+.upvote:hover 
 {
     color: green;
 }
