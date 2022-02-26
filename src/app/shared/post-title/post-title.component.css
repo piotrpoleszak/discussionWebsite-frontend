@@ -1,0 +1,49 @@
+.post
+{
+    --post-line-color: #ccc;    
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: #404040;
+    color: #FFF;
+    position: relative;
+    border-radius: 4px;
+    padding:5px;
+}
+
+.btnCommments
+{
+    border-radius: 2px solid;
+    color: #FFF;
+    opacity: 1;
+    margin-right: 20px;
+}
+
+.btnCommments:hover
+{
+    opacity: 0.65;
+    cursor: pointer;
+}
+
+.post-title
+{
+    font-size: 28px;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.posturl, .postname
+{    
+    color: #FFF;
+}
+
+.subpost-text
+{
+    font-weight: bold;
+}
+
+.post-text
+{
+    margin-top: 10px;
+}

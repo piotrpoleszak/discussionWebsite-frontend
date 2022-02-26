@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { PostModel } from '../post-model';
+import { PostService } from '../post.service';
+import { faArrowUp, faArrowDown, faComments } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-post-title',
@@ -7,7 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostTitleComponent implements OnInit {
 
-  constructor() { }
+  faArrowUp = faArrowUp;
+  faArrowDown = faArrowDown;
+  faComments = faComments;
+
+  posts$: Array<PostModel> = [];
+
+  constructor(private postService: PostService) { 
+    this.postService.getAllPosts().subscribe(post => {
+      this.posts$ = post;
+    })
+  }
 
   ngOnInit(): void {
   }
