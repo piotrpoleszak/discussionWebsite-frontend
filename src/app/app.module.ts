@@ -19,6 +19,7 @@ import { SideBarComponent } from './shared/side-bar/side-bar.component';
 import { SubpostSideBarComponent } from './shared/subpost-side-bar/subpost-side-bar.component';
 import { CreateSubpostComponent } from './subpost/create-subpost/create-subpost.component';
 import { CreatePostComponent } from './post/create-post/create-post.component';
+import { ListSubpostsComponent } from './subpost/list-subposts/list-subposts.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CreatePostComponent } from './post/create-post/create-post.component';
     SideBarComponent,
     SubpostSideBarComponent,
     CreateSubpostComponent,
-    CreatePostComponent
+    CreatePostComponent,
+    ListSubpostsComponent
   ],
   imports: [
     BrowserModule,
