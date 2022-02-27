@@ -14,7 +14,7 @@ export class SubpostSideBarComponent implements OnInit {
 
   constructor(private subpostService: SubpostService) { 
     this.subpostService.getAllSubposts().subscribe(data => {
-      if (data.length > 3) {
+      if (data.length >= 4) {
         this.subposts = data.splice(0, 3);
         this.displayViewAll = true;
       } else {

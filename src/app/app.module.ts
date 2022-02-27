@@ -17,6 +17,8 @@ import { PostTileComponent } from './shared/post-tile/post-tile.component';
 import { VoteButtonComponent } from './shared/vote-button/vote-button.component';
 import { SideBarComponent } from './shared/side-bar/side-bar.component';
 import { SubpostSideBarComponent } from './shared/subpost-side-bar/subpost-side-bar.component';
+import { CreateSubpostComponent } from './subpost/create-subpost/create-subpost.component';
+import { CreatePostComponent } from './post/create-post/create-post.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { SubpostSideBarComponent } from './shared/subpost-side-bar/subpost-side-
     PostTileComponent,
     VoteButtonComponent,
     SideBarComponent,
-    SubpostSideBarComponent
+    SubpostSideBarComponent,
+    CreateSubpostComponent,
+    CreatePostComponent
   ],
   imports: [
     BrowserModule,
