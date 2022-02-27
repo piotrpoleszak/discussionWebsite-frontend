@@ -20,6 +20,7 @@ import { SubpostSideBarComponent } from './shared/subpost-side-bar/subpost-side-
 import { CreateSubpostComponent } from './subpost/create-subpost/create-subpost.component';
 import { CreatePostComponent } from './post/create-post/create-post.component';
 import { ListSubpostsComponent } from './subpost/list-subposts/list-subposts.component';
+import { EditorModule } from '@tinymce/tinymce-angular';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { ListSubpostsComponent } from './subpost/list-subposts/list-subposts.com
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
     FontAwesomeModule,
+    EditorModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
