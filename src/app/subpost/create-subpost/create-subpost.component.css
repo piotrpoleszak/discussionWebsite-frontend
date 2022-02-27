@@ -1,13 +1,12 @@
 .create-subpost-container 
 {
-    margin-top: 10px;
-    --post-line-color: #ccc;
-    border: 1px solid #ccc;
-    margin-top: 10px;
+    margin-top: 50px;
+    --post-line-color: #202020;
+    border: 1px solid #202020;
     margin-bottom: 10px;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #878A8C;
+    background-color: #404040;
+    color: #FFF;
     position: relative;
     border-radius: 4px;
     padding: 5px;
@@ -18,7 +17,7 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;
-    color: #1c1c1c;
+    color: #FFF;
     -ms-flex: 1;
     flex: 1;
   }
@@ -26,10 +25,10 @@
   .btnCreateSubpost 
   {
     background-color: #0079D3;
-    border-color: #0079D3;
+    border-color: #202020;
     color: aliceblue;
     fill: #0079D3;
-    border: 1px solid;
+    border: 1px solid #202020;
     border-radius: 4px;
     text-align: center;
     letter-spacing: 1px;
@@ -48,7 +47,7 @@
   .btnDiscard 
   {
     fill: #0079D3;
-    border: 1px solid;
+    border: 1px solid #202020;
     border-radius: 4px;
     text-align: center;
     letter-spacing: 1px;
@@ -63,8 +62,15 @@
     width: 288px;
     height: 34px;
     margin-top: 5px;
-    color: #0079D3;
-    background-color: transparent;
+    color: #FFF;
+    background-color: #0079D3;
+    margin-right: 30px;
+  }
+
+  .btnDiscard:hover,
+  .btnCreateSubpost:hover
+  {
+    opacity: 0.7;
   }
   
   .guidelines 
@@ -73,22 +79,22 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
-    color: #1c1c1c;
+    color: #FFF;
   }
   
   .sidebar 
   {
     width: 312px;
     height: 242px;
-    --post-line-color: #ccc;
-    border: 1px solid #ccc;
+    --post-line-color: #202020;
+    border: 1px solid #202020;
     margin-bottom: 10px;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #878A8C;
+    background-color: #404040;
+    color: #FFF;
     position: relative;
     border-radius: 4px;
     padding: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    justify-content: center;
   }
