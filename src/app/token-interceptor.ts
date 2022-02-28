@@ -16,13 +16,11 @@ export class TokenInterceptor implements HttpInterceptor
     constructor(public authService: AuthService) { }
 
     intercept(req: HttpRequest<any>, next: HttpHandler):
-    Observable<HttpEvent<any>> 
-    {
+        Observable<HttpEvent<any>> {
 
         if (req.url.indexOf('refresh') !== -1 || req.url.indexOf('login') !== -1) {
             return next.handle(req);
         }
-
         const jwtToken = this.authService.getJwtToken();
 
         if (jwtToken) {
@@ -35,19 +33,12 @@ export class TokenInterceptor implements HttpInterceptor
                 }
             }));
         }
-
         return next.handle(req);
+
     }
 
-    addToken(req: HttpRequest<any>, jwtToken: any) 
-    {
-        return req.clone({
-            headers: req.headers.set('Authorization', 'Bearer' + jwtToken)
-        })
-    }
-
-    private handleAuthErrors(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> 
-    {
+    private handleAuthErrors(req: HttpRequest<any>, next: HttpHandler)
+        : Observable<HttpEvent<any>> {
         if (!this.isTokenRefreshing) {
             this.isTokenRefreshing = true;
             this.refreshTokenSubject.next(null);
@@ -71,5 +62,12 @@ export class TokenInterceptor implements HttpInterceptor
                 })
             );
         }
+    }
+
+    addToken(req: HttpRequest<any>, jwtToken: any) {
+        return req.clone({
+            headers: req.headers.set('Authorization',
+                'Bearer ' + jwtToken)
+        });
     }
 }

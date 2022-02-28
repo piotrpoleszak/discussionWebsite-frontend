@@ -22,6 +22,7 @@ import { CreatePostComponent } from './post/create-post/create-post.component';
 import { ListSubpostsComponent } from './subpost/list-subposts/list-subposts.component';
 import { EditorModule } from '@tinymce/tinymce-angular';
 import { ViewPostComponent } from './post/view-post/view-post.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { ViewPostComponent } from './post/view-post/view-post.component';
     ToastrModule.forRoot(),
     FontAwesomeModule,
     EditorModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
