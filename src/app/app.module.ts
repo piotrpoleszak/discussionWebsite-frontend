@@ -21,6 +21,7 @@ import { CreateSubpostComponent } from './subpost/create-subpost/create-subpost.
 import { CreatePostComponent } from './post/create-post/create-post.component';
 import { ListSubpostsComponent } from './subpost/list-subposts/list-subposts.component';
 import { EditorModule } from '@tinymce/tinymce-angular';
+import { ViewPostComponent } from './post/view-post/view-post.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { EditorModule } from '@tinymce/tinymce-angular';
     SubpostSideBarComponent,
     CreateSubpostComponent,
     CreatePostComponent,
-    ListSubpostsComponent
+    ListSubpostsComponent,
+    ViewPostComponent,
   ],
   imports: [
     BrowserModule,
